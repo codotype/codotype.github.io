@@ -1,6 +1,9 @@
 * Overview
   * [Welcome](README.md)
 
+* Generator
+  * [Overview](docs/generator/overview.md)
+
 * Client
   * [Overview](docs/client_generators/overview.md)
   * [Vue.js](docs/client_generators/vuejs.md)

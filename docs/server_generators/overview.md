@@ -1,3 +1,3 @@
 # Server Code Generation
 
-Blazeplate generates server-side REST APIs.
+codotype generates server-side REST APIs.
