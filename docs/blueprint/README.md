@@ -5,16 +5,18 @@ In Codotype, a **Blueprint** encapsulates a high-level abstract representation o
 
 #### Blueprint Label & Identifier
 
-TODO - document Blueprint label & Identifier
+The core meta data for each Blueprint is described by the structure below:
 
-#### Blueprint Models
+```
+{
+  id: 1,
+  label: 'Book Store',
+  identifier: 'book_store',
+  schemas: [ ... ],
+  seed_data: [ ... ]
+}
+```
 
-TODO - document Model metadata
+> TODO - Blueprint should have class name as well, add GitHub issue
 
-#### Model Attributes
-
-TODO - document Model Attributes
-
-#### Model Relations
-
-TODO - document Model relations
+> TODO - Blueprint `schemas` should be renamed to `models`
