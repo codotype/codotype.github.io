@@ -4,6 +4,8 @@ Documentation for [codotype.io](http://codotype.io)
 
 Built with [Docsify](https://docsify.js.org)
 
+[NPM Organization](https://www.npmjs.com/org/codotype)
+
 ## Repositories
 
 [codotype](https://github.com/codotype/codotype)
