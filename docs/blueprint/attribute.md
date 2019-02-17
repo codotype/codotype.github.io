@@ -9,24 +9,33 @@ The core meta data for each attribute is described by the structure below:
 ```
 {
   id: 1,
+  order: 0,
   label: 'Title',
   identifier: 'title',
-  datatype: 'TEXT',
-  datatype_options: {}
+  help: '',
+  required: true,
+  unique: false,
+  datatype: 'STRING',
+  datatypeOptions: {}
 }
 ```
 
 #### Datatypes
 
-The datatype describes the type of data encaptulated in an individual attribue. A list of Codotype supported datatypes is below:
+The datatype describes the type of data encaptulated in an individual attribue. A list of Codotype supported datatypes is as follows:
 
-- `TEXT`
+- `STRING`
 - `STRING_ARRAY`
 - `NUMBER`
-- `BOOL`
+- `INTEGER`
+- `FLOAT`
+- `DOUBLE`
+- `BOOLEAN`
 - `DATE`
 - `TIME`
 - `DATETIME`
 - `JSON`
 
-> TODO - document `datatype`, `datatype_options` here
+All of the Codotype datatypes are defined in the `@codotype/types` package.
+
+> TODO - `datatype_options` here
