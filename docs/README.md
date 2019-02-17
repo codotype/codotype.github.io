@@ -5,12 +5,12 @@ tagline: Hand-crafted starter code for the modern web
 actionText: Get Started →
 actionLink: /blueprint/
 features:
-- title: Simplicity First
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+- title: Blazingly Fast
+  details: Bring unprecedented velocity to new projects - validate and ship your product faster than ever before
+- title: Model-driven workflow
+  details: Define your models, attributes, and relations - Codotype does the rest.
+- title: 100% Open Source
+  details: Projects built with Codotype are open source under the MIT License. You can relicense the code as necessary to suit your needs
 footer: MIT Licensed | Copyright © 2018-present Alexander Schwartzberg
 ---
 <!-- heroImage: /hero.png -->
