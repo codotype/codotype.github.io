@@ -1,4 +1,4 @@
-# Codotype Generators
+# Generators
 
 This is where we document the ins-and-outs of Codotype generators.
 
