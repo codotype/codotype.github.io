@@ -12,8 +12,7 @@ The core meta data for each Blueprint is described by the structure below:
   id: 1,
   label: 'Book Store',
   identifier: 'book_store',
-  schemas: [ ... ],
-  seed_data: [ ... ]
+  schemas: [ ... ]
 }
 ```
 

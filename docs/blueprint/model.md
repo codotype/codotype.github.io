@@ -1,4 +1,4 @@
-# Blueprint Models
+# Models
 
 This document describes the structure of an individual Blueprint model.
 
