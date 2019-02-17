@@ -1,22 +1,9 @@
 # Codotype Generators
 
-This is where we document the ins-and-outs of codotype generators.
+This is where we document the ins-and-outs of Codotype generators.
 
+## Overview
 
-## Metadata
-Each codotype generator requires the following metadata
-- `id`
-- `name`
-- `icon_url`
-- `github_url`
+A Codotype Generator is a package that plugs into the Codotype runtime and generates code.
 
-## Global Options
-A generator may optionally expose a series of global options that an end-user may configure when they run the generator.
-
-## Model Options
-A generator may optionally expose a series of configurable fields whose values are scoped to each model in the generated app.
-
-## Addons Options
-A generator may optionally expose a series of configurable Addons that facilitate additional functionality in a generator.
-
-
+TODO - need a much more detailed overview of what precisely a generator _is_.
