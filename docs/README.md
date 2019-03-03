@@ -2,8 +2,8 @@
 home: true
 heroText: Codotype
 tagline: Hand-crafted starter code for the modern web
-actionText: Get Started →
-actionLink: /blueprint/
+actionText: Let's Build Something
+actionLink: https://codotype.io
 features:
 - title: Blazingly Fast
   details: Bring unprecedented velocity to new projects - validate and ship your product faster than ever before
