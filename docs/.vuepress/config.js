@@ -1,7 +1,14 @@
 module.exports = {
   title: 'Codotype',
   description: 'Hand-crafted starter code for the modern web',
-  ga: process.env.GA_TRACKING_ID,
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': process.env.GA_TRACKING_ID
+      }
+    ]
+  ],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
