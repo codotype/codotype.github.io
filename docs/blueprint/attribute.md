@@ -2,7 +2,7 @@
 
 Attributes define the static properties that can be assigned to a class.
 
-#### Structure
+## Structure
 
 The core meta data for each attribute is described by the structure below:
 
@@ -12,7 +12,7 @@ The core meta data for each attribute is described by the structure below:
   order: 0,
   label: 'Title',
   identifier: 'title',
-  help: '',
+  help: 'The title of the Book',
   required: true,
   unique: false,
   datatype: 'STRING',
@@ -20,7 +20,7 @@ The core meta data for each attribute is described by the structure below:
 }
 ```
 
-#### Datatypes
+## Datatypes
 
 The datatype describes the type of data encaptulated in an individual attribue. A list of Codotype supported datatypes is as follows:
 
@@ -29,13 +29,10 @@ The datatype describes the type of data encaptulated in an individual attribue. 
 - `NUMBER`
 - `INTEGER`
 - `FLOAT`
-- `DOUBLE`
 - `BOOLEAN`
 - `DATE`
-- `TIME`
-- `DATETIME`
 - `JSON`
 
-All of the Codotype datatypes are defined in the `@codotype/types` package.
+All of the Codotype datatypes are defined in the [@codotype/types](http://github.com/codotype/codotype) package.
 
 > TODO - `datatype_options` here

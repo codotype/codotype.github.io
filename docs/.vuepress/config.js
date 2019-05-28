@@ -21,7 +21,7 @@ module.exports = {
     sidebar: [
       '/',
       '/blueprint/',
-      '/blueprint/model.html',
+      '/blueprint/schema.html',
       '/blueprint/attribute.html',
       '/blueprint/relation.html',
       '/generator/',
