@@ -26,7 +26,8 @@ module.exports = {
       '/blueprint/relation.html',
       '/generator/',
       ['/generator/structure.html', 'Structure'],
-      ['/generator/configuration.html', 'Configuration']
+      ['/generator/configuration.html', 'Configuration'],
+      ['/generator/runtime.html', 'Runtime']
     ]
   }
 }
