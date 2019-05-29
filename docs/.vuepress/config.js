@@ -19,7 +19,6 @@ module.exports = {
       { text: 'GitHub', link: 'https://github.com/codotype' },
     ],
     sidebar: [
-      '/',
       '/project/',
       '/blueprint/',
       '/blueprint/schema.html',
