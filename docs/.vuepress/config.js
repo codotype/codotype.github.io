@@ -15,11 +15,12 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/blueprint/' },
+      { text: 'Guide', link: '/project/' },
       { text: 'GitHub', link: 'https://github.com/codotype' },
     ],
     sidebar: [
       '/',
+      '/project/',
       '/blueprint/',
       '/blueprint/schema.html',
       '/blueprint/attribute.html',
