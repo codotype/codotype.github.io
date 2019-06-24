@@ -3,7 +3,7 @@ home: true
 heroText: Codotype
 tagline: Hand-crafted starter code for the modern web
 actionText: Learn More
-actionLink: /project/
+actionLink: /overview/
 features:
 - title: Blazingly Fast
   details: Bring unprecedented velocity to new projects - validate and ship your product faster than ever before
@@ -13,4 +13,4 @@ features:
   details: Projects built with Codotype are open source under the MIT License. You can relicense the code as necessary to suit your needs
 footer: MIT Licensed | Copyright © 2018-present Alexander Schwartzberg
 ---
-<!-- heroImage: /hero.png -->
+<!-- heroImage: https://res.cloudinary.com/codotype/image/upload/v1560045005/tech-logos/codotype.png -->

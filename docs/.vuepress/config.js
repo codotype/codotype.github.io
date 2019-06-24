@@ -15,19 +15,43 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/project/' },
+      { text: 'Guide', link: '/overview/' },
       { text: 'GitHub', link: 'https://github.com/codotype' },
     ],
     sidebar: [
-      '/project/',
-      '/blueprint/',
-      '/blueprint/schema.html',
-      '/blueprint/attribute.html',
-      '/blueprint/relation.html',
-      '/generator/',
-      ['/generator/structure.html', 'Structure'],
-      ['/generator/configuration.html', 'Configuration'],
-      ['/generator/runtime.html', 'Runtime']
+      {
+        title: 'Hello Codotype', // required
+        // path: '/overview/', // which should be a absolute path.
+        collapsable: false, // defaults to true
+        sidebarDepth: 2, // defaults to 1
+        children: [
+          '/overview/',
+          '/overview/connect',
+        ]
+      },
+      {
+        title: 'Core',
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+          '/core/',
+          '/core/project',
+          '/core/schema',
+          '/core/attribute',
+          '/core/relation',
+        ]
+      },
+      {
+        title: 'Generator',
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+          '/generator/',
+          '/generator/structure',
+          '/generator/configuration',
+          '/generator/runtime',
+        ]
+      },
     ]
   }
 }

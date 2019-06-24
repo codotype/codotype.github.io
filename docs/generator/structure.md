@@ -1,4 +1,4 @@
-# Codotype Generator Directory Structure
+# Directory Structure
 
 Codotype Generators require a specific directory structure to function correctly. The benefit of this structure approach is to effectively relieve generator developers of the burdens of decision making during the authoring process.
 
@@ -50,3 +50,12 @@ The `codotype-generator.json` file is arguably the important file in the generat
 - `official` - if the generator is published by Codotype
 - `experience` - an optional tag detailing the level of experience required to use the code produced by the generator
 - `configuration_groups` - an array of `OptionGroup` objects that expose additional configuration provided by the generator
+- `defaultSchemas: Schema[]` - a `Schemas` array containing default schemas to load with the project. Learn more about default schema behavior [here]()
+- `defaultConfiguration: {}` - object that can provide optional defaults/examples for each ConfigurationGroup. This is where you can supply default `Addon` data for different `ConfigurationGroups`
+- `supportedDatatypes: AttributeID[]` - The datatypes supported by this generator. Only an array of `DATATYPE_*` identifiers that correspond to values defined in [@codotype/types]() are accepted.
+- `supportedRelations:  RelationID[]` - The relation types supported by this generator. Only an array of `RELATION_TYPE_*` identifiers that correspond to values defined in [@codotype/types]() are accepted.
+
+
+It should be built in such a way that Schemas with their `source` attribute set to `generator` will accept default Addons and Options.
+
+It should also support a `meta` type such that all user-defined schemas (schemas with `source` attribute set to `user`) will be supplied with the defaults when the configuration is build in the editor.

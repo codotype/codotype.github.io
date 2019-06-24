@@ -16,19 +16,25 @@ A `ConfigurationGroup` encapsulates a sub-set of a Generator's opt-in configurat
   type: "CONFIGURATION_GROUP_TYPE_OPTION",
   scope: "CONFIGURATION_GROUP_SCOPE_GLOBAL",
   more_info_url: "",
-  attributes: [{
-    label: "Deploy with Netlify?",
-    identifier: "netlify",
-    datatype: DATAYPE_BOOLEAN,
-    help: "Include configuration files to automatically deploy your app to Netlify",
-    more_info_url: "https://docs.netlify.com/configuration",
-    icon: {
-      type: "ICON_TYPE_URL",
-      value: "https://netlify.com/logo.png"
-    }
-  }]
+  attributes: ConfigurationOption[]
 }
 
+```
+
+The `ConfigurationOption` type is defined thusly:
+
+```
+{
+  label: "Deploy with Netlify?",
+  identifier: "netlify",
+  datatype: DATAYPE_BOOLEAN,
+  help: "Include configuration files to automatically deploy your app to Netlify",
+  more_info_url: "https://docs.netlify.com/configuration",
+  icon: {
+    type: "ICON_TYPE_URL",
+    value: "https://netlify.com/logo.png"
+  }
+}
 ```
 
 
