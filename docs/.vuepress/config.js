@@ -16,6 +16,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/overview/' },
+      { text: 'Twitter', link: 'https://twitter.com/codotype' },
       { text: 'GitHub', link: 'https://github.com/codotype' },
     ],
     sidebar: [
