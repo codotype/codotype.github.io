@@ -130,3 +130,16 @@ Conversely, the above `ConfigurationGroup` will produce the following configurat
 
 
 The **Schema** scope refers to configuration that's intended to be used to dictate behavior specific to each **Schema**. This is ideal for things like choosing a unique icons or permissions for each Model.
+
+
+### Default Options & Addons
+
+> TODO - this documentation is incomplete, pulled from Trello issue
+
+The `codotype-generator.json` file should include a `defaultAddons` object that can provide optional defaults/examples for each `ConfigurationGroup`.
+
+It should be built in such a way that Schemas with their `source` property set to `generator` will accept default Addons and Options.
+
+It should also support a meta type such that all user-defined schemas (Schemas with `source` property set to `user`) will be supplied with the defaults when the configuration is built in the editor.
+
+Note that we'll need to maintain whether or not these values are removable by the end-user in the editor.
