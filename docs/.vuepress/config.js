@@ -2,7 +2,8 @@ module.exports = {
   title: 'Codotype',
   description: 'Hand-crafted starter code for the modern web',
   head: [
-    ['link', { rel: 'icon', href: 'https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png' }]
+    ['link', { rel: 'icon', href: 'https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png' }],
+    ['script', { src: 'https://raw.githubusercontent.com/codotype/codotype.github.io/master/js/hotjar.js' }]
   ],
   plugins: [
     [
