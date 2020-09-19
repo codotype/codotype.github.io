@@ -1,4 +1,4 @@
-# Generators
+# Plugins
 
 - [Sahat's Hackathon Starter](https://github.com/codotype/codotype-hackathon-starter)
 
