@@ -1,12 +1,10 @@
-# Generators
+# Plugins
 
-This is where we document the ins-and-outs of Codotype generators.
+This is where we document the ins-and-outs of Codotype plugins.
 
 ## Overview
 
-A Codotype Generator is a package that plugs into the Codotype runtime and generates code.
-
-TODO - need a much more detailed overview of what precisely a generator _is_.
+A Codotype Plugin is a package that integrates with the Codotype runtime and generates code.
 
 ## Templates
 

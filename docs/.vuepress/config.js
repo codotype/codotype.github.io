@@ -1,13 +1,30 @@
+const autometa_options = {
+  image: true, // regular meta image used by search engines
+  twitter: true, // twitter card
+  og: true, // open graph: facebook, pinterest, google+
+  schema: true, // schema.org for google
+  site: {
+    name: "Codotype",
+    twitter: "codotype"
+  },
+  author: {
+    name: "Alexander Schwartzberg",
+    twitter: "aeksco"
+  },
+  canonical_base: "https://codotype.org"
+};
+
 module.exports = {
   title: "Codotype",
-  description: "Hand-crafted starter code for the modern web",
+  description:
+    "Plugin-based framework for generating custom boilerplate code and scaffolding. Open-source under the MIT License.",
   head: [
     [
       "link",
       {
         rel: "icon",
         href:
-          "https://res.cloudinary.com/codotype/image/upload/v1552257221/codotype-icons/favicon.png"
+          "https://res.cloudinary.com/codotype/image/upload/v1560045005/tech-logos/codotype.png"
       }
     ],
     [
@@ -19,7 +36,17 @@ module.exports = {
     ]
   ],
   plugins: [
+    ["autometa", autometa_options],
     [
+      "vuepress-plugin-clean-urls",
+      {
+        normalSuffix: "/",
+        indexSuffix: "/",
+        notFoundPath: "/404.html"
+      }
+    ],
+    [
+      "@vuepress/last-updated",
       "@vuepress/google-analytics",
       {
         ga: process.env.GA_TRACKING_ID
@@ -42,7 +69,7 @@ module.exports = {
         children: [
           "/overview/",
           "/overview/how_it_works",
-          "/overview/generators",
+          "/overview/plugins",
           "/overview/open_source",
           "/overview/connect"
         ]
@@ -54,13 +81,13 @@ module.exports = {
         children: ["/core/runtime", "/core/cli"]
       },
       {
-        title: "Generator",
+        title: "Plugins",
         collapsable: false,
         sidebarDepth: 2,
         children: [
-          "/generator/",
-          "/generator/structure",
-          "/generator/configuration",
+          "/plugins/",
+          "/plugins/structure",
+          "/plugins/configuration",
           "/core/project",
           "/core/schema",
           "/core/attribute",

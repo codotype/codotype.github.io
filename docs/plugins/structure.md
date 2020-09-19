@@ -1,20 +1,19 @@
 # Directory Structure
 
-Codotype Generators require a specific directory structure to function correctly. The benefit of this structure approach is to effectively relieve generator developers of the burdens of decision making during the authoring process.
+Codotype Plugins require a specific directory structure to function correctly. The benefit of this structure approach is to effectively relieve plugin developers of the burdens of decision making during the authoring process.
 
 ## General Structure
 
-The general directory structure of a generator is as follows:
+The general directory structure of a plugin is as follows:
 
 ```
-├── generator
+├── plugin
 │   ├── index.js
 │   └── component
 │       ├── index.js
 │       └── templates
 │           └── app.js
 ├── LICENSE
-├── codotype-generator.json
 ├── package.json
 └── README.md
 ```
@@ -33,9 +32,9 @@ The `package.json` file is required so a Codotype generator may be installed as 
 
 A `LICENSE` file is required for both your generator, as well as the codebase produced by it.
 
-## codotype-generator.json
+## plugin/meta.ts
 
-The `codotype-generator.json` file is arguably the important file in the generator's definition - it dictates the end-user experience of using a generator and defines all the requisite metadata that's passed to the Codotype web interface and runtime. A breakdown of the file is as follows:
+The `meta.ts` file is arguably the important file in the generator's definition - it dictates the end-user experience of using a generator and defines all the requisite metadata that's passed to the Codotype web interface and runtime. A breakdown of the file is as follows:
 
 - `id` - unique ID for the generator
 - `label` - short label for the generator
@@ -53,8 +52,7 @@ The `codotype-generator.json` file is arguably the important file in the generat
 - `defaultSchemas: Schema[]` - a `Schemas` array containing default schemas to load with the project. Learn more about default schema behavior [here]()
 - `defaultConfiguration: {}` - object that can provide optional defaults/examples for each ConfigurationGroup. This is where you can supply default `Addon` data for different `ConfigurationGroups`
 - `supportedDatatypes: AttributeID[]` - The datatypes supported by this generator. Only an array of `DATATYPE_*` identifiers that correspond to values defined in [@codotype/types]() are accepted.
-- `supportedRelations:  RelationID[]` - The relation types supported by this generator. Only an array of `RELATION_TYPE_*` identifiers that correspond to values defined in [@codotype/types]() are accepted.
-
+- `supportedRelations: RelationID[]` - The relation types supported by this generator. Only an array of `RELATION_TYPE_*` identifiers that correspond to values defined in [@codotype/types]() are accepted.
 
 It should be built in such a way that Schemas with their `source` attribute set to `generator` will accept default Addons and Options.
 
