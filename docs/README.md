@@ -1,6 +1,7 @@
 ---
 home: true
 heroText: Codotype
+heroImage: https://res.cloudinary.com/codotype/image/upload/v1560045005/tech-logos/codotype.png
 tagline: Plugin-based framework for generating custom boilerplate code and scaffolding
 actionText: Learn More
 actionLink: /overview/
@@ -13,5 +14,3 @@ features:
     details: Projects built with Codotype are open source under the MIT License. You can relicense the code as necessary to suit your needs
 footer: MIT Licensed | Copyright © 2020-present Alexander Schwartzberg
 ---
-
-<!-- heroImage: https://res.cloudinary.com/codotype/image/upload/v1560045005/tech-logos/codotype.png -->

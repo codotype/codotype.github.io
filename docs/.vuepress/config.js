@@ -54,6 +54,9 @@ module.exports = {
     ]
   ],
   themeConfig: {
+    logo:
+      "https://res.cloudinary.com/codotype/image/upload/v1560045005/tech-logos/codotype.png",
+    repo: "nuxt-community/firebase-module",
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/overview/" },
