@@ -35,23 +35,18 @@ module.exports = {
       }
     ]
   ],
-  // "@vuepress/plugin-google-analytics": "^1.5.4",
-  // "@vuepress/plugin-last-updated": "^1.5.4",
-  // "vuepress": "^1.5.4",
-  // "vuepress-plugin-autometa": "^0.1.13",
-  // "vuepress-plugin-clean-urls": "^1.1.2"
   plugins: [
-    // ["autometa", autometa_options],
-    // [
-    //   "vuepress-plugin-clean-urls",
-    //   {
-    //     normalSuffix: "/",
-    //     indexSuffix: "/",
-    //     notFoundPath: "/404.html"
-    //   }
-    // ],
-    // "@vuepress/last-updated",
+    ["autometa", autometa_options],
     [
+      "vuepress-plugin-clean-urls",
+      {
+        normalSuffix: "/",
+        indexSuffix: "/",
+        notFoundPath: "/404.html"
+      }
+    ],
+    [
+      "@vuepress/last-updated",
       "@vuepress/google-analytics",
       {
         ga: process.env.GA_TRACKING_ID
